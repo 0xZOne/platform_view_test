@@ -10,6 +10,10 @@ public class MainActivity extends FlutterActivity {
         flutterEngine
             .getPlatformViewsController()
             .getRegistry()
-            .registerViewFactory("<platform-view-type>", new NativeViewFactory());
+            .registerViewFactory("<simple-text-view>", new NativeViewFactory());
+        flutterEngine
+            .getPlatformViewsController()
+            .getRegistry()
+            .registerViewFactory("<gl-surface-view>", new GlSurfaceFactory());
     }
 }

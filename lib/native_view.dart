@@ -12,7 +12,7 @@ class NativeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // This is used in the platform side to register the view.
-    const String viewType = '<platform-view-type>';
+    const String viewType = '<gl-surface-view>';//'<simple-text-view>';
 
     // Pass parameters to the platform side.
     final Map<String, dynamic> creationParams = <String, dynamic>{

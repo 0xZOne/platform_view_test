@@ -41,12 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Stack(
           children: <Widget>[
-            Container(
-              constraints: BoxConstraints.expand(height: 300),
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.red[600],
-              alignment: Alignment.center,
-              child: NativeView(usingHybridComposition),
+            Opacity(
+              opacity: 0.85,
+              child: Container(
+                constraints: BoxConstraints.expand(height: 120),
+                padding: const EdgeInsets.all(8.0),
+                color: Colors.red[600],
+                alignment: Alignment.center,
+                child: NativeView(usingHybridComposition),
+              ),
             ),
             Opacity(
               opacity: 0.85,

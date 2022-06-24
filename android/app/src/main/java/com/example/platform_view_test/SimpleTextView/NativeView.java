@@ -25,8 +25,8 @@ class NativeView implements PlatformView {
         // for (Map.Entry<String, Object> entry : creationParams.entrySet()) {
         //     sb.append(entry.getKey() + ": " + entry.getValue().toString()).append("\n");
         // }
-        sb.append("\n\n");
-        sb.append("Native Android view");
+        sb.append("Texture ID = \n\n" + id);
+        sb.append("Simple TextView");
         textView.setTextColor(Color.WHITE);
         textView.setText(sb.toString());
     }
